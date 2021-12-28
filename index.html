@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cyber Hammer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="Images/SVGs/Icon.svg">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="cyberhammer.css">
+
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="cyberhammer.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- Slider Indicators
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>-->
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" id="carousel-1">
+                </div>
+            </div>
+            <!--
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              -->
+        </div>
+    </header>
+
+
+    <div id="stick-here"></div>
+    <div id="stickThis">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand js-scroll-trigger pointer" onclick="topFunction()" title="Go to top">
+                    <img class="logo" src="Images/SVGs/Logo.svg" width="50" height="50"
+                        onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/Logo.svg'" />
+                    <img class="logo" src="Images/SVGs/TextLogo.svg" width="150" height="50"
+                        onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/TextLogo.svg'" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#stick-here" onclick="elementNavigation('stick-here')">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#games-start" onclick="elementNavigation('games-start')">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact" onclick="elementNavigation('contact')">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="page-content" class="py-1 py-md-5">
+        <section id="about">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-8 col-md-8 col-lg-10 mx-auto text-center">
+                        <h2 class="section-title">About</h2>
+                        <p class="lead text-cener section-text">Cyber Hammer Games was founded in 2018 and has since grown to become an established game development studio.
+                            We are fueled by our love for great storytelling, stunning visuals and thrilling gameplay.
+                            We work hard to bring our vision to life in order to create an exciting and memorable gaming experience for all our players.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="games-start" class="opacity-0"><h2>Games</h2></div>
+
+        <section id="games" class="py-5 my-5 my-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 col-sm-12 mx-auto">
+                        <h2 class="section-title text-center">Games</h2>
+
+                        <!-- Image overlay card Start (two buttons)-->
+                        <div class="card bg-greycolor text-white border-0">
+                            <img class="card-img" src="" alt="Card image" id="card1">
+                            <div class="card-img-overlay">
+                              <p class="card-title col-sm-5 offset-sm-7">RBY: Red Blue Yellow</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">Enjoy an aesthetically pleasing fast reflex game with many shapes and eye candy effects to choose from.</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">
+                                <a href="https://play.google.com/store/apps/details?id=com.IntangibleRealmStudios.RedBlueYellow" target="_blank"><img class="col-9 col-sm-5 col-lg-4 mb-3 mb-sm-0 zoom" src="Images/Cards/GooglePlay.png" /></a>
+                                <a href="https://apps.apple.com/us/app/rby-red-blue-yellow/id1465453727" target="_blank"><img class="col-9 col-sm-5 col-lg-4 zoom" src="Images/Cards/AppStore.png" /></a>
+                            </p>
+                            </div>
+                          </div>
+                        <!-- Image overlay card End-->
+
+                         <!-- Image overlay card Start (one button)-->
+                         <div class="card bg-greycolor text-white border-0">
+                            <img class="card-img" src="" alt="Card image" id="card2">
+                            <div class="card-img-overlay">
+                              <p class="card-title col-sm-5 offset-sm-7">Human Invaders</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">Defend your home planet from the pesky invading humans in nostalgic arcade style.</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">
+                                <a href="https://play.google.com/store/apps/details?id=com.IntangibleRealmStudios.HumanInvaders" target="_blank"><img class="col-9 col-sm-5 col-lg-4 mb-3 mb-sm-0  pt-4 pt-sm-0 zoom" src="Images/Cards/GooglePlay.png" /></a>
+                            </p>
+                            </div>
+                          </div>
+                          <!-- Image overlay card End-->
+
+                          <!-- Image overlay card Start (one coming soon button)-->
+                          <div class="card bg-greycolor text-white border-0">
+                            <img class="card-img" src="" alt="Card image" id="card3">
+                            <div class="card-img-overlay">
+                              <p class="card-title col-sm-5 offset-sm-7">Paper Plane Tower</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">Fly your paper plane to the top of the tower but beware of the lurking dangers.</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">
+                                <img class="col-9 col-sm-5 col-lg-4 mb-3 mb-sm-0  pt-4 pt-sm-0" src="Images/Cards/comingsoon.png" />
+                            </p>
+                            </div>
+                          </div>
+                          <!-- Image overlay card End-->
+
+                         <!-- Image overlay card Start (one coming soon button)-->
+                          <div class="card bg-greycolor text-white border-0">
+                            <img class="card-img" src="" alt="Card image" id="card4">
+                            <div class="card-img-overlay">
+                              <p class="card-title col-sm-5 offset-sm-7">Neon Outrun</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">Control the ball to avoid the obstacles and collect crystals to customize your gameplay.</p>
+                              <p class="card-text col-sm-7 offset-sm-5 text-center game-text">
+                                <img class="col-9 col-sm-5 col-lg-4 mb-3 mb-sm-0  pt-4 pt-sm-0" src="Images/Cards/comingsoon.png" />
+                            </p>
+                            </div>
+                          </div>
+                          <!-- Image overlay card End-->
+                          
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <img class="logo" id="cyberhammer-footer-logo" src="Images/SVGs/Logo.svg"
+                    onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/Logo.svg'" />
+            </div>
+            <div class="text-center">
+                <img class="logo" id="cyberhammer-footer-textlogo" src="Images/SVGs/TextLogo.svg"
+                    onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/TextLogo.svg'" />
+            </div>
+            <div class=" text-center">
+                <a href="https://www.facebook.com/CyberHammerGames" target="_blank"><img class="logo mx-2 link-logos"
+                        src="Images/SVGs/Facebook.svg"
+                        onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/Facebook.svg'" /></a>
+                <a href="https://twitter.com/CyberhammerG" target="_blank"><img class="logo mx-2 link-logos"
+                        src="Images/SVGs/Twitter.svg"
+                        onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/Twitter.svg'" /></a>
+                <a href="https://www.instagram.com/cyberhammergames/" target="_blank"><img class="logo mx-2 link-logos"
+                        src="Images/SVGs/Instagram.svg"
+                        onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/YouTube.svg'" /></a>
+                <a href="https://www.youtube.com/channel/UCNROmv_Q7oN3vIZpPGGNk6Q" target="_blank"><img class="logo mx-2 link-logos"
+                        src="Images/SVGs/YouTube.svg"
+                        onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/Email.svg'" /></a>
+                <a href="mailto: contact@cyberhammergames.com" target="_blank"><img class="logo mx-2 link-logos" src="Images/SVGs/Email.svg"
+                        onerror="this.removeAttribute('onerror'); this.src='Images/SVGs/Logo.svg'" /></a>
+            </div>
+            <div class="footer-text mt-3">
+                <p class="m-0 text-center text-white">All rights reserved Copyright &copy; 2020 Cyber Hammer Games<span
+                        class="hideinxs pl-2"> <span class="greycolor">|</span> <a href="PrivacyPolicy.html" target="_blank"
+                            class="px-2">Privacy policy</a> <span class="greycolor">|</span> <a href="TermsOfUse.html" target="_blank"
+                            class="px-2">Terms of use</a></span></p>
+                <p class="mt-2 text-center text-white d-block d-sm-block d-md-none"><a href="PrivacyPolicy.html" target="_blank"
+                        class="pr-3">Privacy policy</a><a href="TermsOfUse.html" target="_blank">Terms of use</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button> -->
+    <div id="cookies" class="fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>This website might be using cookies. By using cyberhammergames.com you agree to the use of cookies as described in our <a href="TermsOfUse.html" target="_blank">cookie policy</a>.</p>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary px-4 mt-2 btn-sm" onclick="removeCookiesDiv()">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
